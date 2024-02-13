@@ -28,6 +28,6 @@ connection.execute('''Create table Events
 tmp = "Admin123"
 passs = hashlib.sha256(tmp.encode()).hexdigest()
 eml = "Admin@ksu.edu.sa"
-connection.execute( """INSERT INTO Users(FirstName, LastName, StudentID,Password,Email,Phone) VALUES (?,?,?,?,?,?);""",("Admin", "Admin", "0123456789", passs,eml, "0551822304"))
+connection.execute( """INSERT INTO Users(FirstName, LastName, StudentID,Password,Email,Phone) VALUES (?,?,?,?,?,?);""",("Admin", "Admin", "0123456789", passs,eml, "0555555555"))
 connection.commit()
 connection.close()
